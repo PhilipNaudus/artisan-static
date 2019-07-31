@@ -1,4 +1,4 @@
-@extends('_layouts.master')
+@extends('_layouts.home')
 
 @section('content')
     <h1>Welcome to Artisan Static for Jigsaw</h1>
