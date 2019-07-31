@@ -9,10 +9,6 @@
         {{ !empty($__env->yieldContent('title')) ? ' | ' : '' }}
         {{ $page->site->title }}
     </title>
-    <script src="https://kit.fontawesome.com/27def0ec8f.js"></script>
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="css/nav.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all" />
 
     @include('_partials.head.favicon')
     @include('_partials.head.meta')
@@ -21,24 +17,17 @@
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 </head>
 <body>
-<header>	
-<div class="container">
-			<nav class="mnu">
-                        <div class="logo" id="logo">
-                            <h1> <a href="index.html"><img src="images/logo_mulanbook.png" alt="MulanBook Logo" /></a>
-                            </h1>
-                        </div>
-
-                        <label for="drop" class="toggle"><i class="fa fa-bars"></i></label>
-                        <input type="checkbox" id="drop">
-                        <ul class="menu mt-1">
-                            <li class="mr-lg-4 mr-3 active"><a href="index.html">Home</a></li>
-                            <li class="mr-lg-4 mr-3"><a href="about.html" class="scroll">About</a></li>
-                        </ul>
-                    </nav>
-
-</div>
-</header>
+    <header>
+        <nav>
+            <strong>{{ $page->site->title }}</strong><br>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/posts">Posts</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <article>
         <section>
